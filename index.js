@@ -8,16 +8,16 @@ const tariffCode = 'E-1R-AGILE-FLEX-22-11-25-G'
 let tariffByHalfHour;
 
 const getYesterdaysDatetime = () => {
-  const today = new Date(); // Get current date
-  const yesterday = new Date(today); // Copy current date
+  const today = new Date(); 
+  const yesterday = new Date(today); 
 
-  yesterday.setDate(today.getDate() - 1); // Set date to yesterday
+  yesterday.setDate(today.getDate() - 1);
 
-  const year = yesterday.getFullYear(); // Extract year
-  const month = (yesterday.getMonth() + 1).toString().padStart(2, '0'); // Extract month (adjusted because month is zero-indexed)
-  const day = yesterday.getDate().toString().padStart(2, '0'); // Extract day
-  const yesterdayStart = year + "-" + month + "-" + day + "T00:00:00Z"; // Format datetime
-  const yesterdayEnd = year + "-" + month + "-" + day + "T23:59:59Z"; // Format datetime
+  const year = yesterday.getFullYear();
+  const month = (yesterday.getMonth() + 1).toString().padStart(2, '0');
+  const day = yesterday.getDate().toString().padStart(2, '0');
+  const yesterdayStart = year + "-" + month + "-" + day + "T00:00:00Z";
+  const yesterdayEnd = year + "-" + month + "-" + day + "T23:59:59Z";
 
   return [yesterdayStart, yesterdayEnd];
 }
