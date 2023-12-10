@@ -1,6 +1,6 @@
 # Octopus Energy: Daily Consumption Notifcation for Scriptable
 
-A Scriptable script that shows your Octopus energy consumption and cost of yesterday as a notification.
+A Scriptable script that shows your Octopus Electricity Agile Tariff consumption and cost of yesterday as a notification.
 
 ⚠️ This script only works with Agile Octopus plan only.
 
